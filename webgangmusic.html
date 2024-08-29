@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Gang Music Blog</title>
+    <style>
+        *{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+        }
+        html{
+          scroll-behavior: smooth;
+        }
+        /*top*/
+        .top{
+            width: 100%;
+            height: 100vh;
+            background: url("mypicture.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .nav-bar ul a{
+            margin-right: 50px;
+            text-decoration: none;
+color: white;
+        }
+        .nav-bar ul a:hover{
+            color: #ff9100;
+        }
+        .nav-bar{
+            z-index: 1;
+        }
+        .top header{
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 20px;
+height: 10vh;
+        }
+        .overlay{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.432);
+            width: inherit;
+            height: inherit;
+            z-index: 0;
+        }
+        .logo{
+        z-index: 1;
+        }
+        .showcase{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 80vh;
+            width: 100%;
+            z-index: 1;
+            position: fixed;
+        }
+        .showcase h1{
+color: white;
+z-index: 1000;
+        }
+        .buttons{
+           margin-top: 15px; 
+           width: 15%;
+           justify-content: space-between;
+           display: flex;
+           z-index: 1000;
+          
+        }
+       .btn1, .btn2{
+            width: 100px;
+            height: 50px;
+            border-radius: 20px;
+            border: 1px solid;
+            background-color: transparent;
+            color: white;
+            transition: all 0.35 ease-in-out;
+            cursor: pointer;
+          }
+           .btn2:hover{
+            color: #ff9100;
+            opacity: 0.7;
+          }
+          .btn1:hover{
+            color: #ff9100;
+            opacity: 0.7;
+          }
+          .search-bar{
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            height: 162vh;
+           }
+           .search-bar input[type=text]{
+            padding-right: 50px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: none;
+            border-radius: 5px;
+            z-index: 1;
+           }
+           
+          /*section*/
+          .services{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50vh;
+          }
+          .service1{
+            display: flex;
+            justify-content: space-between;
+          }
+          .text{
+            width: 70%;
+            height: inherit;
+            padding: 30px;
+            line-height: 22px;
+    
+          }
+          .text h1{
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: #ff9100;
+          }
+          .img1{
+            background-image: url("mymic3.jpg");
+            width: 30%;
+            height: inherit;
+            background-size: cover;
+            background-position: center;
+          }
+          .service2{
+            display: flex;
+            justify-content: space-between;
+          }
+          .img2{
+            background-image: url("mymic2.jpg");
+            width: 30%;
+            height: inherit;
+            background-size: cover;
+            background-position: center;
+          }
+          /*sectiontwo*/
+          .section1{
+            background-image: url("mymic1.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 50vh;
+            width: 100%;
+          }
+          .overlay1{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.432);
+            width: inherit;
+            height: inherit;
+            z-index: 0;
+        }
+        .feature h1{
+            color: white;
+            font-size: 100px;
+            text-align: center;
+            text-decoration: solid;
+        }
+          .feature{
+            padding: 120px;
+            z-index: 1;
+          }
+          /*footer*/
+          .footer{
+            display: flex;
+            align-items: center;  
+            height: 10vh;
+            background-color: black;
+          }
+          .copyright{
+          
+            text-align: right;
+            color: white;
+            padding: 20px;
+            width: 100%;
+          }
+          .copyright h3{
+            font-weight: lighter;
+            font-size: x-small;
+            letter-spacing: 3px;
+          }
+          .icons{
+            padding:20px;
+            width: 100%;
+           text-align: left;
+           
+          }
+          .icons a{
+          margin: 5px;
+            }
+            @media (max-width: 690px) {
+  .top header{
+    display: inline-block;
+}
+.showcase{
+    display: inline-block;
+}
+.services{
+    display: inline-block;
+}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="top" id="top">
+        <div class="overlay"></div>
+    <header>
+        <div class="logo">
+        <h1><span style="color: #ff9100;">Web Gang Music</span> Blog</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <a href="">Trends</a>
+                <a href="">Adverts</a>
+                <a href="">Contact</a>
+                <a href="">About</a>
+                <audio src="macpfterriga.mp3" type="mp3>" controls loop></audio>
+                </ul>
+        </nav>
+    </header>
+    <!--showcase-->
+    <div class="showcase">
+<h1>Welcome to <span style="color: #ff9100;">(Web Gang Music Blog)</span></h1>
+<div class="buttons">
+<button class="btn1">Subscribe</button>
+<button class="btn2">Explore</button>
+</div>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Type here to seacrh">
+    </div>
+    </div>
+    <!--Section one-->
+        <section class="services">
+<div class="service1">
+    <div class="text">
+        <h1>Web Gang Post</h1> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis voluptatem ut, eius odio dignissimos mollitia voluptatum consequuntur modi quod fugit sunt temporibus consequatur repellendus aliquam architecto veniam facere quia, sed assumenda aut, placeat commodi praesentium! Praesentium voluptatem quae quo cumque obcaecati, ex, laudantium ipsum mollitia quam iure sapiente debitis?</p>
+</div>
+    <div class="img1"></div>
+</div>
+<div class="service2">
+    <div class="text">
+        <h1>Web Gang Post</h1> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis voluptatem ut, eius odio dignissimos mollitia voluptatum consequuntur modi quod fugit sunt temporibus consequatur repellendus aliquam architecto veniam facere quia, sed assumenda aut, placeat commodi praesentium! Praesentium voluptatem quae quo cumque obcaecati, ex, laudantium ipsum mollitia quam iure sapiente debitis?</p>
+    </div>
+    <div class="img2"></div>
+</div>
+
+        </section>
+<!--section two-->
+<section class="section1">
+<div class="overlay1"></div>
+<div class="feature">
+<h1>Web Gang Music Blog</h1>
+</div>
+</section>
+<!--footer-->
+<footer class="footer">
+  <div class="icons">
+    <ul>
+      <a href="https://www.facebook.com"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-facebook_-512.png" width="20px"></a>
+      <a href="https://www.instagram.com"><img src="https://cdn0.iconfinder.com/data/icons/social-media-circle-6/1024/instagram-512.png" width="20px"></a>
+      <a href="https://www.twitter.com"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-512.png" width="20px"></a>
+      <audio src="macpfterriga.mp3" type="mp3>" controls loop></audio>
+    </ul>
+    </div>
+<div class="copyright"><h3>Copyright &copy; 2024, <span style="color: #ff9100;">WebGangMusic</span>Blog. All Right Reserved.</h3>
+</div>
+</footer>
+</body>
+</html>
